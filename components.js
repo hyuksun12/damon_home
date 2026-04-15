@@ -15,14 +15,24 @@ function renderHeader() {
   <header id="site-header">
     <div class="header-inner">
       <a href="#/" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div class="logo-icon"><img src="logo-icon.png" alt="담온 로고"></div>
         <div>
           <div class="logo-text">담온</div>
           <div class="logo-sub">Fresh Food Supply</div>
         </div>
       </a>
-      <nav>${navLinks}</nav>
+
+      <nav class="desktop-nav">${navLinks}</nav>
+
       <a href="#/contact" class="header-cta">거래 문의하기</a>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenuPanel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu-panel" id="mobileMenuPanel" hidden>
+      <nav class="mobile-nav">${navLinks}</nav>
     </div>
   </header>`;
 }
@@ -68,4 +78,36 @@ function renderFooter() {
       </div>
     </div>
   </footer>`;
+}
+
+
+function initMobileMenu() {
+  const toggle = document.getElementById('mobileMenuToggle');
+  const panel = document.getElementById('mobileMenuPanel');
+  if (!toggle || !panel) return;
+
+  const closeMenu = () => {
+    panel.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('mobile-menu-open');
+  };
+
+  const openMenu = () => {
+    panel.hidden = false;
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('mobile-menu-open');
+  };
+
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    expanded ? closeMenu() : openMenu();
+  });
+
+  panel.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMenu();
+  });
 }

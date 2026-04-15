@@ -20,6 +20,7 @@ async function loadPage(path) {
 async function navigate() {
   const hash = location.hash.replace('#', '') || '/';
   document.getElementById('header-container').innerHTML = renderHeader();
+  if (typeof initMobileMenu === 'function') initMobileMenu();
   const content = await loadPage(hash);
   document.getElementById('app').innerHTML = content;
   document.getElementById('footer-container').innerHTML = renderFooter();
