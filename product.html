@@ -1,0 +1,104 @@
+<div class="product-page">
+  <section class="product-hero product-hero-bright">
+    <div class="product-hero-inner">
+      <span class="section-tag">Products</span>
+      <h1>냉장 · 냉동 · 가공(실온)<br><span>카테고리별 품목 안내</span></h1>
+      <p>대표 품목인 김치, 쌀, 계란을 중심으로 업장 운영에 필요한 식자재를 카테고리별로 정리했습니다.</p>
+    </div>
+  </section>
+
+  <section class="product-list-section product-list-section-bright">
+    <div class="section-inner">
+      <div class="category-filter">
+        <button class="filter-btn active" data-cat="all">전체</button>
+        <button class="filter-btn" data-cat="chilled"><i class="fa-solid fa-temperature-low"></i> 냉장</button>
+        <button class="filter-btn" data-cat="frozen"><i class="fa-solid fa-snowflake"></i> 냉동</button>
+        <button class="filter-btn" data-cat="processed"><i class="fa-solid fa-jar"></i> 가공·실온</button>
+      </div>
+
+      <div class="prod-grid" id="prod-grid">
+        <div class="prod-card image-card" data-cat="chilled">
+          <div class="prod-thumb thumb-kimchi"></div>
+          <div class="prod-badge chilled-badge"><i class="fa-solid fa-temperature-low"></i> 냉장</div>
+          <div class="prod-body">
+            <h3>업소용 김치</h3>
+            <p>포기김치와 깍두기 등 자주 찾는 품목을 중심으로 안정적인 냉장 유통 체계를 갖추고 있습니다.</p>
+            <div class="prod-tags"><span class="prod-tag">대표품목</span><span class="prod-tag">대용량</span><span class="prod-tag">냉장보관</span></div>
+          </div>
+        </div>
+
+        <div class="prod-card image-card" data-cat="chilled">
+          <div class="prod-thumb thumb-eggs"></div>
+          <div class="prod-badge chilled-badge"><i class="fa-solid fa-temperature-low"></i> 냉장</div>
+          <div class="prod-body">
+            <h3>국내산 계란</h3>
+            <p>왕란·특란 등 업장 사용량에 맞춰 공급하며, 입고부터 납품까지 신선도 관리를 우선합니다.</p>
+            <div class="prod-tags"><span class="prod-tag">대표품목</span><span class="prod-tag">국내산</span><span class="prod-tag">매일입고</span></div>
+          </div>
+        </div>
+
+        <div class="prod-card image-card" data-cat="frozen">
+          <div class="prod-thumb thumb-frozen-dumpling"></div>
+          <div class="prod-badge frozen-badge"><i class="fa-solid fa-snowflake"></i> 냉동</div>
+          <div class="prod-body">
+            <h3>냉동 만두</h3>
+            <p>분식·급식·외식업에서 자주 사용하는 냉동 만두를 함께 납품할 수 있도록 확장형 품목으로 운영합니다.</p>
+            <div class="prod-tags"><span class="prod-tag">확장품목</span><span class="prod-tag">업소용</span></div>
+          </div>
+        </div>
+
+        <div class="prod-card image-card" data-cat="frozen">
+          <div class="prod-thumb thumb-frozen-cutlet"></div>
+          <div class="prod-badge frozen-badge"><i class="fa-solid fa-snowflake"></i> 냉동</div>
+          <div class="prod-body">
+            <h3>냉동 돈가스</h3>
+            <p>간편 조리가 가능한 냉동 가공식품으로 메인 품목과 함께 효율적인 납품 구성이 가능합니다.</p>
+            <div class="prod-tags"><span class="prod-tag">확장품목</span><span class="prod-tag">간편조리</span></div>
+          </div>
+        </div>
+
+        <div class="prod-card image-card" data-cat="processed">
+          <div class="prod-thumb thumb-rice"></div>
+          <div class="prod-badge processed-badge"><i class="fa-solid fa-jar"></i> 가공·실온</div>
+          <div class="prod-body">
+            <h3>업소용 쌀</h3>
+            <p>20kg 기준의 업소용 쌀을 중심으로 자주 사용하는 기본 식재료를 안정적으로 공급합니다.</p>
+            <div class="prod-tags"><span class="prod-tag">대표품목</span><span class="prod-tag">20kg</span><span class="prod-tag">정기납품</span></div>
+          </div>
+        </div>
+
+        <div class="prod-card image-card" data-cat="processed">
+          <div class="prod-thumb thumb-processed"></div>
+          <div class="prod-badge processed-badge"><i class="fa-solid fa-jar"></i> 가공·실온</div>
+          <div class="prod-body">
+            <h3>장류 · 소스류</h3>
+            <p>쌀과 함께 자주 주문되는 장류·소스류를 묶음으로 구성해 주문 편의성을 높였습니다.</p>
+            <div class="prod-tags"><span class="prod-tag">실온보관</span><span class="prod-tag">대용량</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-cta product-cta-bright">
+        <p>원하시는 품목 조합이 있으신가요? 대표 품목 외에도 카테고리별 맞춤 구성이 가능합니다.</p>
+        <a href="#/contact" class="btn-primary"><i class="fa-solid fa-headset"></i> 품목 상담하기</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+(function() {
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.prod-card');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      cards.forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'flex' : 'none';
+      });
+    });
+  });
+})();
+</script>
