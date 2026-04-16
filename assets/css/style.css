@@ -174,7 +174,7 @@ img {
   height: 42px;
   padding: 0 22px;
   background: var(--color-primary);
-  color: var(--color-white);
+  color: #ffffff !important;
   font-family: var(--font-ko);
   font-size: 14px;
   font-weight: 600;
