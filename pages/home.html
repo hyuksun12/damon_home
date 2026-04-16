@@ -3,6 +3,13 @@
 <!-- 메인 히어로 -->
 <section class="hero">
 
+  <!-- 배경 슬라이더 -->
+  <div class="hero-slider">
+    <div class="hero-slide active" style="background-image: url('https://dt565gqrz3z7y.cloudfront.net/ce/image/pKoLMakkXugiUWjacogV8A.jpg?f=thumb-750x421&format=webp')"></div>
+    <div class="hero-slide" style="background-image: url('../cf/background_2.png')"></div>
+    <div class="hero-slide" style="background-image: url('https://cdn.iusm.co.kr/news/photo/201612/703217_296330_246.jpg')"></div>
+  </div>
+
   <!-- 배경 오버레이 -->
   <div class="hero-overlay"></div>
 
@@ -24,6 +31,13 @@
       <a href="#" class="btn-hero-primary" data-page="products">상품 둘러보기</a>
       <a href="#" class="btn-hero-secondary" data-page="contact">거래 문의하기</a>
     </div>
+  </div>
+
+  <!-- 슬라이더 도트 인디케이터 -->
+  <div class="hero-dots">
+    <button class="hero-dot active" aria-label="슬라이드 1"></button>
+    <button class="hero-dot" aria-label="슬라이드 2"></button>
+    <button class="hero-dot" aria-label="슬라이드 3"></button>
   </div>
 
   <!-- 스크롤 인디케이터 -->
@@ -141,13 +155,7 @@
 
       <li class="product-card reveal reveal-delay-1">
         <div class="product-thumb product-thumb--kimchi">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <path d="M28 10C20 10 14 17 14 25C14 30 17 34 21 37L28 46L35 37C39 34 42 30 42 25C42 17 36 10 28 10Z" fill="#c0392b" opacity="0.15"/>
-            <path d="M28 10C20 10 14 17 14 25C14 30 17 34 21 37L28 46L35 37C39 34 42 30 42 25C42 17 36 10 28 10Z" stroke="#c0392b" stroke-width="2" fill="none"/>
-            <path d="M22 22C24 20 28 20 30 22" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M22 27C25 25 31 25 34 27" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M24 32C26 31 30 31 32 32" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
+          <img src="https://wimg.sedaily.com/news/legacy/2025/06/17/2GU3WOVXX7_1.jpg" alt="김치" class="product-thumb-img">
         </div>
         <div class="product-info">
           <span class="product-badge">인기</span>
@@ -159,12 +167,7 @@
 
       <li class="product-card reveal reveal-delay-2">
         <div class="product-thumb product-thumb--dangmyeon">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <path d="M16 20C20 18 24 22 28 20C32 18 36 22 40 20" stroke="#8B6914" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-            <path d="M14 27C18 25 23 29 28 27C33 25 38 29 42 27" stroke="#8B6914" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-            <path d="M16 34C20 32 24 36 28 34C32 32 36 36 40 34" stroke="#8B6914" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-            <ellipse cx="28" cy="27" rx="18" ry="14" stroke="#8B6914" stroke-width="1.5" fill="none" opacity="0.3"/>
-          </svg>
+          <img src="https://i.namu.wiki/i/jPp4TaJVyjswwZpYHMT6DUn5oVNNZmF0I9Ytqc2UDdXwg1c1RRYim1DBPSgosfAOcZjGyBjxwCQ4hT-hdGMO9w.webp" alt="당면" class="product-thumb-img">
         </div>
         <div class="product-info">
           <h3 class="product-name">당면</h3>
@@ -175,13 +178,7 @@
 
       <li class="product-card reveal reveal-delay-3">
         <div class="product-thumb product-thumb--sundae">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <rect x="12" y="22" width="32" height="12" rx="6" fill="#5d4037" opacity="0.12"/>
-            <rect x="12" y="22" width="32" height="12" rx="6" stroke="#5d4037" stroke-width="2" fill="none"/>
-            <path d="M18 28C20 26 24 30 28 28C32 26 36 30 38 28" stroke="#5d4037" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-            <line x1="12" y1="34" x2="10" y2="38" stroke="#5d4037" stroke-width="2" stroke-linecap="round"/>
-            <line x1="44" y1="34" x2="46" y2="38" stroke="#5d4037" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+          <img src="https://image.8dogam.com/resized/product/asset/v1/upload/c86bbca1f3fd499f882b38f3f2284b0b.jpg?type=big&res=2x&ext=webp" alt="순대" class="product-thumb-img">
         </div>
         <div class="product-info">
           <h3 class="product-name">순대</h3>
@@ -192,13 +189,7 @@
 
       <li class="product-card reveal reveal-delay-4">
         <div class="product-thumb product-thumb--ugeoji">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <path d="M28 12C28 12 18 18 16 27C14 36 22 44 28 44C34 44 42 36 40 27C38 18 28 12 28 12Z" fill="#2e7d32" opacity="0.12"/>
-            <path d="M28 12C28 12 18 18 16 27C14 36 22 44 28 44C34 44 42 36 40 27C38 18 28 12 28 12Z" stroke="#2e7d32" stroke-width="2" fill="none"/>
-            <path d="M28 12L28 40" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="3 3"/>
-            <path d="M20 22C23 21 25 24 28 23" stroke="#2e7d32" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M20 30C23 29 26 31 28 30" stroke="#2e7d32" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
+          <img src="https://storage.googleapis.com/takeapp/media/cmbypqjwu00000akzhacm133g.jpg" alt="우거지" class="product-thumb-img">
         </div>
         <div class="product-info">
           <h3 class="product-name">우거지</h3>
@@ -209,12 +200,7 @@
 
       <li class="product-card reveal reveal-delay-1">
         <div class="product-thumb product-thumb--pepper">
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-            <path d="M28 14C25 14 23 16 23 19L22 38C22 41 24.5 44 28 44C31.5 44 34 41 34 38L33 19C33 16 31 14 28 14Z" fill="#e53935" opacity="0.13"/>
-            <path d="M28 14C25 14 23 16 23 19L22 38C22 41 24.5 44 28 44C31.5 44 34 41 34 38L33 19C33 16 31 14 28 14Z" stroke="#e53935" stroke-width="2" fill="none"/>
-            <path d="M28 14C28 14 30 10 34 10" stroke="#e53935" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-            <path d="M25 24H31M24 30H32M25 36H31" stroke="#e53935" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
-          </svg>
+          <img src="https://m.health.chosun.com/site/data/img_dir/2023/03/28/2023032800723_0.jpg" alt="고춧가루" class="product-thumb-img">
         </div>
         <div class="product-info">
           <h3 class="product-name">고추가루</h3>

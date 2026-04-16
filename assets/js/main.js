@@ -267,11 +267,48 @@ function initContactForm() {
   });
 }
 
+/* ── 히어로 슬라이더 ── */
+function initHeroSlider() {
+  const slides = mainContent.querySelectorAll('.hero-slide');
+  const dots   = mainContent.querySelectorAll('.hero-dot');
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer   = null;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    if (dots[current]) dots[current].classList.remove('active');
+    current = index;
+    slides[current].classList.add('active');
+    if (dots[current]) dots[current].classList.add('active');
+  }
+
+  function next() {
+    goTo((current + 1) % slides.length);
+  }
+
+  function startAuto() {
+    clearInterval(timer);
+    timer = setInterval(next, 5000);
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      goTo(i);
+      startAuto();
+    });
+  });
+
+  startAuto();
+}
+
 /* ── 페이지별 기능 초기화 ── */
 function initPageFeatures() {
   initProductFilter();
   initFaq();
   initContactForm();
+  initHeroSlider();
 }
 
 /* ── 전화 팝업 (데스크탑) ── */
