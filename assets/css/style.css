@@ -1534,33 +1534,18 @@ a.contact-value:hover {
   overflow: hidden;
 }
 
-.page-hero--about {
-  background-image: url('../../cf/banner_top_trimmed.png');
-  background-size: cover;
-  background-position: 65% center;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 768px) {
-  .page-hero--about {
-    background-position: 72% center;
-    min-height: 240px;
-  }
-}
-
 .page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(17,29,11,0.82) 0%, rgba(30,61,18,0.72) 60%, rgba(22,51,16,0.72) 100%);
-  z-index: 1;
+  background: radial-gradient(circle at 70% 50%, rgba(77,139,42,0.18) 0%, transparent 60%);
 }
 
 .page-hero-inner {
   max-width: var(--max-width);
   margin: 0 auto;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .page-hero-label {
