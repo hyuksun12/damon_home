@@ -201,9 +201,6 @@ function initFaq() {
 }
 
 /* ── 문의 폼 ── */
-// ※ web3forms.com 에서 발급받은 Access Key를 아래에 입력하세요
-const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY_HERE';
-
 function initContactForm() {
   const form        = mainContent.querySelector('#contactForm');
   const successMsg  = mainContent.querySelector('#formSuccess');
@@ -249,13 +246,8 @@ function initContactForm() {
 
     try {
       const formData = new FormData(form);
-      formData.append('access_key', WEB3FORMS_KEY);
-      // 이메일 제목
-      formData.append('subject', `[담온유통 문의] ${formData.get('type') || '온라인 문의'} - ${formData.get('name')}`);
-      // 봇 방지
-      formData.append('botcheck', '');
 
-      const res = await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch('api/submit.php', {
         method: 'POST',
         body: formData,
       });
