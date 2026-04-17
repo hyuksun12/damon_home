@@ -353,7 +353,7 @@ img {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  transition: opacity 0.7s ease;
+  transition: opacity 0.5s ease;
 }
 
 .hero-slide.active {
@@ -1528,24 +1528,39 @@ a.contact-value:hover {
    ============================================================ */
 
 .page-hero {
-  background: linear-gradient(135deg, #111d0b 0%, #1e3d12 60%, #163310 100%);
+  background-color: #111d0b;
   padding: calc(var(--header-height) + 64px) 40px 72px;
   position: relative;
   overflow: hidden;
+}
+
+.page-hero--about {
+  background-image: url('../../cf/banner_top_trimmed.png');
+  background-size: cover;
+  background-position: 65% center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .page-hero--about {
+    background-position: 72% center;
+    min-height: 240px;
+  }
 }
 
 .page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 70% 50%, rgba(77,139,42,0.18) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(17,29,11,0.82) 0%, rgba(30,61,18,0.72) 60%, rgba(22,51,16,0.72) 100%);
+  z-index: 1;
 }
 
 .page-hero-inner {
   max-width: var(--max-width);
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .page-hero-label {

@@ -47,7 +47,7 @@ async function loadPage(pageName) {
   if (!path) return;
 
   try {
-    const res = await fetch(path);
+    const res = await fetch(path, { cache: 'no-store' });
     if (!res.ok) throw new Error(`${res.status}`);
     const html = await res.text();
     mainContent.innerHTML = html;
@@ -60,6 +60,19 @@ async function loadPage(pageName) {
 
     // 페이지별 기능 초기화
     initPageFeatures();
+
+    // 회사소개 히어로 배경 이미지 적용
+    if (pageName === 'about') {
+      const hero = mainContent.querySelector('.page-hero');
+      if (hero) {
+        const isMobile = window.innerWidth <= 768;
+        hero.style.backgroundImage = "url('cf/banner_top_trimmed.png')";
+        hero.style.backgroundSize  = 'cover';
+        hero.style.backgroundRepeat = 'no-repeat';
+        hero.style.backgroundPosition = isMobile ? '65% center' : '60% center';
+        if (isMobile) hero.style.minHeight = '260px';
+      }
+    }
 
     // 스크롤 상단 이동
     window.scrollTo({ top: 0, behavior: 'smooth' });
