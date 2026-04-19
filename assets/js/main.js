@@ -96,6 +96,17 @@ async function loadPage(pageName) {
       }
     }
 
+    // 상품목록 히어로 배경 이미지 적용
+    if (pageName === 'products') {
+      const hero = mainContent.querySelector('.page-hero');
+      if (hero) {
+        hero.style.backgroundImage = "url('cf/6a12c9144b7806ec7530e99a8050571a.jpg')";
+        hero.style.backgroundSize  = 'cover';
+        hero.style.backgroundRepeat = 'no-repeat';
+        hero.style.backgroundPosition = 'center center';
+      }
+    }
+
     // 스크롤 상단 이동
     window.scrollTo({ top: 0, behavior: 'smooth' });
   } catch (err) {
