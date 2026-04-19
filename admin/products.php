@@ -48,6 +48,51 @@ function regenerateJson(PDO $pdo): void {
 
     $json = json_encode(['success' => true, 'data' => $rows], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     file_put_contents(dirname(__DIR__) . '/products.json', $json);
+
+    // ── GitHub API로 자동 배포 ──
+    $configPath = dirname(__DIR__) . '/api/github_config.php';
+    if (!file_exists($configPath)) return;
+    require_once $configPath;
+
+    $apiUrl = "https://api.github.com/repos/" . GITHUB_OWNER . "/" . GITHUB_REPO . "/contents/" . GITHUB_FILE;
+    $headers = [
+        "Authorization: token " . GITHUB_TOKEN,
+        "Accept: application/vnd.github+json",
+        "User-Agent: damon-admin",
+        "Content-Type: application/json",
+    ];
+
+    // 현재 파일 SHA 조회
+    $ch = curl_init($apiUrl . "?ref=" . GITHUB_BRANCH);
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_HTTPHEADER     => $headers,
+        CURLOPT_SSL_VERIFYPEER => false,
+    ]);
+    $res  = curl_exec($ch);
+    curl_close($ch);
+    $info = json_decode($res, true);
+    $sha  = $info['sha'] ?? null;
+    if (!$sha) return;
+
+    // 파일 업데이트
+    $body = json_encode([
+        'message' => '상품 업데이트 (자동)',
+        'content' => base64_encode($json),
+        'sha'     => $sha,
+        'branch'  => GITHUB_BRANCH,
+    ], JSON_UNESCAPED_UNICODE);
+
+    $ch = curl_init($apiUrl);
+    curl_setopt_array($ch, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_CUSTOMREQUEST  => 'PUT',
+        CURLOPT_POSTFIELDS     => $body,
+        CURLOPT_HTTPHEADER     => $headers,
+        CURLOPT_SSL_VERIFYPEER => false,
+    ]);
+    curl_exec($ch);
+    curl_close($ch);
 }
 
 // ── 기본 상품 시드 ───────────────────────────────────────

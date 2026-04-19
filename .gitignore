@@ -1,2 +1,5 @@
 # DB 설정 파일 (컴퓨터마다 다름 — 커밋하지 않음)
 config.php
+
+# GitHub API 토큰 (절대 커밋하지 않음)
+api/github_config.php
