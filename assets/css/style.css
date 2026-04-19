@@ -101,6 +101,20 @@ img {
   align-items: center;
 }
 
+.logo-img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.footer-logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -249,9 +263,9 @@ img {
   flex-shrink: 1;
 }
 
-.mobile-nav-header .logo-icon svg {
-  width: 28px;
-  height: 28px;
+.mobile-nav-header .logo-img {
+  width: 44px;
+  height: 44px;
 }
 
 .mobile-nav-header .logo-name {
@@ -1436,7 +1450,7 @@ img {
   font-size: 11px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.30);
-  width: 36px;
+  white-space: nowrap;
   flex-shrink: 0;
 }
 
@@ -1553,7 +1567,7 @@ a.contact-value:hover {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 3.5px;
-  color: var(--color-primary-light);
+  color: var(--color-white);
   margin-bottom: 14px;
 }
 

@@ -351,6 +351,10 @@ tr:hover td { background: #fafff6; }
         <span class="sidebar-count sidebar-count--new"><?= $counts['신규'] ?></span>
       <?php endif; ?>
     </a>
+    <a href="products.php" class="sidebar-link">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="9" y="6" width="6" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M9 1h5M9 3.5h3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+      상품 관리
+    </a>
     <a href="/damon_home/" class="sidebar-link" target="_blank">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 14H2L8 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
       사이트 바로가기

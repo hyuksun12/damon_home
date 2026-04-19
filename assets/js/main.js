@@ -308,12 +308,107 @@ function initHeroSlider() {
   startAuto();
 }
 
+/* ── HTML 이스케이프 ── */
+function escHtml(str) {
+  return String(str ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/* ── 상품 페이지 동적 로드 ── */
+async function initProductsPage() {
+  const grid = mainContent.querySelector('#productsGrid');
+  if (!grid) return;
+
+  grid.innerHTML = '<li style="padding:60px;text-align:center;color:#aaa;list-style:none;">불러오는 중…</li>';
+
+  try {
+    const res  = await fetch('api/products.php');
+    const json = await res.json();
+    if (!json.success || !json.data.length) {
+      grid.innerHTML = '<li style="padding:60px;text-align:center;color:#aaa;list-style:none;">등록된 상품이 없습니다.</li>';
+      return;
+    }
+
+    grid.innerHTML = json.data.map((p, i) => buildProductCard(p, i)).join('');
+    bindPageLinks(mainContent);
+    initReveal();
+    initProductFilter();
+  } catch (e) {
+    grid.innerHTML = '<li style="padding:60px;text-align:center;color:#aaa;list-style:none;">상품을 불러올 수 없습니다.</li>';
+  }
+}
+
+function buildProductCard(p, i) {
+  const catCls = p.category === '냉장' ? 'pcard-badge--green' : p.category === '냉동' ? 'pcard-badge--blue' : 'pcard-badge--orange';
+  const imgHtml = p.image_url
+    ? `<img src="${escHtml(p.image_url)}" alt="${escHtml(p.name)}" class="pcard-photo-img">`
+    : '';
+  const tagsHtml = (p.tags || []).map(t => `<span>${escHtml(t)}</span>`).join('');
+
+  return `
+    <li class="pcard" data-category="${escHtml(p.category)}">
+      <div class="pcard-photo${p.photo_class ? ' pcard-photo--' + escHtml(p.photo_class) : ''}">
+        ${imgHtml}
+        <span class="pcard-badge ${catCls}">${escHtml(p.category)}</span>
+      </div>
+      <div class="pcard-body">
+        <h3 class="pcard-name">${escHtml(p.name)}</h3>
+        <p class="pcard-desc">${escHtml(p.description)}</p>
+        <div class="pcard-tags">${tagsHtml}</div>
+        <a href="#" class="pcard-cta" data-page="contact">납품 문의하기</a>
+      </div>
+    </li>`;
+}
+
+/* ── 홈 상품 미리보기 동적 로드 ── */
+async function initHomeProducts() {
+  const grid = mainContent.querySelector('#homeProductsGrid');
+  if (!grid) return;
+
+  try {
+    const res  = await fetch('api/products.php?limit=5');
+    const json = await res.json();
+    if (!json.success || !json.data.length) return;
+
+    grid.innerHTML = json.data.map((p, i) => buildPreviewCard(p, i)).join('');
+    bindPageLinks(mainContent);
+    initReveal();
+  } catch (e) { /* 조용히 실패 */ }
+}
+
+function buildPreviewCard(p, i) {
+  const imgHtml = p.image_url
+    ? `<img src="${escHtml(p.image_url)}" alt="${escHtml(p.name)}" class="product-thumb-img">`
+    : '';
+  const badgeHtml = p.badge
+    ? `<span class="product-badge">${escHtml(p.badge)}</span>`
+    : '';
+
+  return `
+    <li class="product-card">
+      <div class="product-thumb${p.photo_class ? ' product-thumb--' + escHtml(p.photo_class) : ''}">
+        ${imgHtml}
+      </div>
+      <div class="product-info">
+        ${badgeHtml}
+        <h3 class="product-name">${escHtml(p.name)}</h3>
+        <p class="product-desc">${escHtml(p.description)}</p>
+        ${p.tags?.[0] ? `<span class="product-tag">${escHtml(p.tags[0])}</span>` : ''}
+      </div>
+    </li>`;
+}
+
 /* ── 페이지별 기능 초기화 ── */
 function initPageFeatures() {
-  initProductFilter();
+  // initProductFilter은 initProductsPage 내부에서 카드 로드 후 호출 (이중 바인딩 방지)
   initFaq();
   initContactForm();
   initHeroSlider();
+  initProductsPage();
+  initHomeProducts();
 }
 
 /* ── 전화 팝업 (데스크탑) ── */
