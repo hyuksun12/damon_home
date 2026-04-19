@@ -74,6 +74,17 @@ async function loadPage(pageName) {
       }
     }
 
+    // 거래안내 히어로 배경 이미지 적용
+    if (pageName === 'process') {
+      const hero = mainContent.querySelector('.page-hero');
+      if (hero) {
+        hero.style.backgroundImage = "url('cf/4191fb0c2fccc1407b286576a2116b75.jpg')";
+        hero.style.backgroundSize  = 'cover';
+        hero.style.backgroundRepeat = 'no-repeat';
+        hero.style.backgroundPosition = 'center center';
+      }
+    }
+
     // 스크롤 상단 이동
     window.scrollTo({ top: 0, behavior: 'smooth' });
   } catch (err) {
