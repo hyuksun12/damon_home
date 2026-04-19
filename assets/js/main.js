@@ -78,7 +78,7 @@ async function loadPage(pageName) {
     if (pageName === 'process') {
       const hero = mainContent.querySelector('.page-hero');
       if (hero) {
-        hero.style.backgroundImage = "url('cf/f144117e96a75d116cbfe31d923978cd.jpg')";
+        hero.style.backgroundImage = "url('cf/910c75b9d48bab7b398b8701a3bf676a.jpg')";
         hero.style.backgroundSize  = 'cover';
         hero.style.backgroundRepeat = 'no-repeat';
         hero.style.backgroundPosition = 'center center';
