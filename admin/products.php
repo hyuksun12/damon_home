@@ -47,7 +47,7 @@ function regenerateJson(PDO $pdo): void {
     }
 
     $json = json_encode(['success' => true, 'data' => $rows], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-    file_put_contents(dirname(__DIR__) . '/api/products.json', $json);
+    file_put_contents(dirname(__DIR__) . '/products.json', $json);
 }
 
 // ── 기본 상품 시드 ───────────────────────────────────────

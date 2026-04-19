@@ -325,7 +325,7 @@ async function initProductsPage() {
   grid.innerHTML = '<li style="padding:60px;text-align:center;color:#aaa;list-style:none;">불러오는 중…</li>';
 
   try {
-    const res  = await fetch('api/products.json');
+    const res  = await fetch('products.json');
     const json = await res.json();
     if (!json.success || !json.data.length) {
       grid.innerHTML = '<li style="padding:60px;text-align:center;color:#aaa;list-style:none;">등록된 상품이 없습니다.</li>';
@@ -369,7 +369,7 @@ async function initHomeProducts() {
   if (!grid) return;
 
   try {
-    const res  = await fetch('api/products.json');
+    const res  = await fetch('products.json');
     const json = await res.json();
     if (!json.success || !json.data.length) return;
     json.data = json.data.slice(0, 5);
