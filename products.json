@@ -1,77 +1,112 @@
 {
-  "success": true,
-  "data": [
-    {
-      "id": 1,
-      "name": "배추김치",
-      "category": "냉장",
-      "description": "국내산 배추와 천일염으로 담근 정통 배추김치입니다. 업소용 대용량으로 공급하며 신선도 유지에 최적화된 포장으로 납품합니다.",
-      "image_url": "https://wimg.sedaily.com/news/legacy/2025/06/17/2GU3WOVXX7_1.jpg",
-      "photo_class": "kimchi",
-      "tags": ["업소용 대용량", "정기납품 가능", "국내산"],
-      "badge": "인기",
-      "is_active": true,
-      "sort_order": 1
-    },
-    {
-      "id": 2,
-      "name": "깍두기",
-      "category": "냉장",
-      "description": "아삭한 식감이 살아있는 깍두기입니다. 설렁탕·해장국·고깃집 등 다양한 업종에 납품 중이며 업소 규모에 맞게 수량 조절이 가능합니다.",
-      "image_url": "",
-      "photo_class": "kkakdugi",
-      "tags": ["업소용 대용량", "정기납품 가능"],
-      "badge": "",
-      "is_active": true,
-      "sort_order": 2
-    },
-    {
-      "id": 3,
-      "name": "우거지",
-      "category": "냉장",
-      "description": "청결하게 손질된 신선한 우거지로 국물 요리의 풍미를 더합니다. 해장국·된장찌개 등에 활용하기 좋은 상태로 납품합니다.",
-      "image_url": "https://storage.googleapis.com/takeapp/media/cmbypqjwu00000akzhacm133g.jpg",
-      "photo_class": "ugeoji",
-      "tags": ["손질 완료", "정기납품 가능"],
-      "badge": "",
-      "is_active": true,
-      "sort_order": 3
-    },
-    {
-      "id": 4,
-      "name": "순대",
-      "category": "냉동",
-      "description": "당일 생산·당일 납품 원칙으로 가장 신선한 상태를 유지합니다. 순대국밥·분식점 등 다양한 업종에 맞는 규격으로 공급합니다.",
-      "image_url": "https://image.8dogam.com/resized/product/asset/v1/upload/c86bbca1f3fd499f882b38f3f2284b0b.jpg?type=big&res=2x&ext=webp",
-      "photo_class": "sundae",
-      "tags": ["당일납품", "다양한 규격"],
-      "badge": "당일납품",
-      "is_active": true,
-      "sort_order": 4
-    },
-    {
-      "id": 5,
-      "name": "당면",
-      "category": "가공",
-      "description": "국내산 원료로 생산한 탄력 있고 쫄깃한 고품질 당면입니다. 잡채·찜닭·전골 등 다양한 요리에 사용되며 대용량 납품이 가능합니다.",
-      "image_url": "https://i.namu.wiki/i/jPp4TaJVyjswwZpYHMT6DUn5oVNNZmF0I9Ytqc2UDdXwg1c1RRYim1DBPSgosfAOcZjGyBjxwCQ4hT-hdGMO9w.webp",
-      "photo_class": "dangmyeon",
-      "tags": ["국내산 원료", "정기납품 가능", "대용량"],
-      "badge": "",
-      "is_active": true,
-      "sort_order": 5
-    },
-    {
-      "id": 6,
-      "name": "고추가루",
-      "category": "가공",
-      "description": "국내산 고추 100%로 만든 색깔 좋고 매운맛이 살아있는 고추가루입니다. 김치 담금용·요리용 등 용도에 따라 선택 가능합니다.",
-      "image_url": "https://i.pinimg.com/1200x/0d/4a/cf/0d4acfce740e9cc7aa9553fd55a96f5d.jpg",
-      "photo_class": "pepper",
-      "tags": ["국내산 100%", "김치용·요리용"],
-      "badge": "국내산 100%",
-      "is_active": true,
-      "sort_order": 6
-    }
-  ]
+    "success": true,
+    "data": [
+        {
+            "id": 1,
+            "name": "배추김치",
+            "category": "냉장",
+            "description": "국내산 배추와 천일염으로 담근 정통 배추김치입니다. 업소용 대용량으로 공급하며 신선도 유지에 최적화된 포장으로 납품합니다.",
+            "image_url": "https:\/\/wimg.sedaily.com\/news\/legacy\/2025\/06\/17\/2GU3WOVXX7_1.jpg",
+            "photo_class": "kimchi",
+            "tags": [
+                "업소용 대용량",
+                "정기납품 가능",
+                "국내산",
+                "수입"
+            ],
+            "badge": "인기",
+            "is_active": true,
+            "sort_order": 1
+        },
+        {
+            "id": 2,
+            "name": "깍두기",
+            "category": "냉장",
+            "description": "아삭한 식감이 살아있는 깍두기입니다. 설렁탕·해장국·고깃집 등 다양한 업종에 납품 중이며 업소 규모에 맞게 수량 조절이 가능합니다.",
+            "image_url": "",
+            "photo_class": "kkakdugi",
+            "tags": [
+                "업소용 대용량",
+                "정기납품 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 2
+        },
+        {
+            "id": 3,
+            "name": "우거지",
+            "category": "냉동",
+            "description": "청결하게 손질된 신선한 우거지로 국물 요리의 풍미를 더합니다. 해장국·된장찌개 등에 활용하기 좋은 상태로 납품합니다.",
+            "image_url": "https:\/\/storage.googleapis.com\/takeapp\/media\/cmbypqjwu00000akzhacm133g.jpg",
+            "photo_class": "ugeoji",
+            "tags": [
+                "손질 완료",
+                "정기납품 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 3
+        },
+        {
+            "id": 4,
+            "name": "순대",
+            "category": "냉동",
+            "description": "당일 생산·당일 납품 원칙으로 가장 신선한 상태를 유지합니다. 순대국밥·분식점 등 다양한 업종에 맞는 규격으로 공급합니다.",
+            "image_url": "https:\/\/image.8dogam.com\/resized\/product\/asset\/v1\/upload\/c86bbca1f3fd499f882b38f3f2284b0b.jpg?type=big&res=2x&ext=webp",
+            "photo_class": "sundae",
+            "tags": [
+                "당일납품",
+                "다양한 규격"
+            ],
+            "badge": "당일납품",
+            "is_active": true,
+            "sort_order": 4
+        },
+        {
+            "id": 5,
+            "name": "당면",
+            "category": "가공",
+            "description": "국내산 원료로 생산한 탄력 있고 쫄깃한 고품질 당면입니다. 잡채·찜닭·전골 등 다양한 요리에 사용되며 대용량 납품이 가능합니다.",
+            "image_url": "https:\/\/i.namu.wiki\/i\/jPp4TaJVyjswwZpYHMT6DUn5oVNNZmF0I9Ytqc2UDdXwg1c1RRYim1DBPSgosfAOcZjGyBjxwCQ4hT-hdGMO9w.webp",
+            "photo_class": "dangmyeon",
+            "tags": [
+                "국내산 원료",
+                "정기납품 가능",
+                "대용량"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 5
+        },
+        {
+            "id": 6,
+            "name": "고추가루",
+            "category": "가공",
+            "description": "국내산 고추 100%로 만든 색깔 좋고 매운맛이 살아있는 고추가루입니다. 김치 담금용·요리용 등 용도에 따라 선택 가능합니다.",
+            "image_url": "https:\/\/i.pinimg.com\/1200x\/0d\/4a\/cf\/0d4acfce740e9cc7aa9553fd55a96f5d.jpg",
+            "photo_class": "pepper",
+            "tags": [
+                "국내산 100%",
+                "김치용·요리용"
+            ],
+            "badge": "국내산 100%",
+            "is_active": true,
+            "sort_order": 6
+        },
+        {
+            "id": 7,
+            "name": "육수",
+            "category": "냉동",
+            "description": "냉면 육수",
+            "image_url": "https:\/\/search.pstatic.net\/common\/?src=http%3A%2F%2Fshopping.phinf.naver.net%2Fmain_5167545%2F51675457678.20241129180945.jpg&type=sc960_832",
+            "photo_class": "",
+            "tags": [
+                "정기납품"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 7
+        }
+    ]
 }
