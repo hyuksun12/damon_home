@@ -377,7 +377,7 @@ async function initHomeProducts() {
     grid.innerHTML = json.data.map((p, i) => buildPreviewCard(p, i)).join('');
     bindPageLinks(mainContent);
     initReveal();
-  } catch (e) { /* 조용히 실패 */ }
+  } catch (e) { console.error('[homeProducts]', e); }
 }
 
 function buildPreviewCard(p, i) {
