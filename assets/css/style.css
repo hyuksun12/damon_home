@@ -270,6 +270,7 @@ img {
 
 .mobile-nav-header .logo-name {
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .mobile-nav-header .logo-sub {
