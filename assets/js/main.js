@@ -85,6 +85,17 @@ async function loadPage(pageName) {
       }
     }
 
+    // 고객센터 히어로 배경 이미지 적용
+    if (pageName === 'contact') {
+      const hero = mainContent.querySelector('.page-hero');
+      if (hero) {
+        hero.style.backgroundImage = "url('cf/503c16336a9e162bb9f0f062b1fab10b.jpg')";
+        hero.style.backgroundSize  = 'cover';
+        hero.style.backgroundRepeat = 'no-repeat';
+        hero.style.backgroundPosition = 'center center';
+      }
+    }
+
     // 스크롤 상단 이동
     window.scrollTo({ top: 0, behavior: 'smooth' });
   } catch (err) {
