@@ -66,7 +66,7 @@ async function loadPage(pageName) {
       const hero = mainContent.querySelector('.page-hero');
       if (hero) {
         const isMobile = window.innerWidth <= 768;
-        hero.style.backgroundImage = "url('cf/banner_top_trimmed.png')";
+        hero.style.backgroundImage = "url('cf/acaaab936f6e64d1ff2278bb70c3f83a.jpg')";
         hero.style.backgroundSize  = 'cover';
         hero.style.backgroundRepeat = 'no-repeat';
         hero.style.backgroundPosition = isMobile ? '65% center' : '60% center';
