@@ -32,6 +32,24 @@ function esc(string $s): string {
     return htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
 }
 
+// ── products.json 자동 갱신 (GitHub Pages 대응) ──────────
+function regenerateJson(PDO $pdo): void {
+    $rows = $pdo->query(
+        "SELECT * FROM `products` WHERE `is_active`=1 ORDER BY `sort_order` ASC, `id` ASC"
+    )->fetchAll();
+
+    foreach ($rows as &$row) {
+        $row['tags']      = array_values(array_filter(array_map('trim', explode(',', $row['tags'] ?? ''))));
+        $row['is_active'] = true;
+        $row['id']        = (int)$row['id'];
+        $row['sort_order'] = (int)$row['sort_order'];
+        unset($row['created_at'], $row['updated_at']);
+    }
+
+    $json = json_encode(['success' => true, 'data' => $rows], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    file_put_contents(dirname(__DIR__) . '/api/products.json', $json);
+}
+
 // ── 기본 상품 시드 ───────────────────────────────────────
 $cnt = (int)$pdo->query("SELECT COUNT(*) FROM `products`")->fetchColumn();
 if ($cnt === 0) {
@@ -73,6 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ->execute([$name,$category,$description,$image_url,$photo_class,$tags,$badge,$is_active,$sort_order]);
                 $msg = '상품이 추가되었습니다.';
             }
+            regenerateJson($pdo);
             header('Location: products.php?flash=' . urlencode($msg));
             exit;
         }
@@ -81,6 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($action === 'delete') {
         $id = (int)($_POST['id'] ?? 0);
         if ($id) $pdo->prepare("DELETE FROM `products` WHERE `id`=?")->execute([$id]);
+        regenerateJson($pdo);
         header('Location: products.php?flash=' . urlencode('상품이 삭제되었습니다.'));
         exit;
     }
@@ -88,6 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($action === 'toggle') {
         $id = (int)($_POST['id'] ?? 0);
         if ($id) $pdo->prepare("UPDATE `products` SET `is_active`=1-`is_active` WHERE `id`=?")->execute([$id]);
+        regenerateJson($pdo);
         header('Location: products.php');
         exit;
     }
