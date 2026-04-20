@@ -51,6 +51,22 @@
             "sort_order": 3
         },
         {
+            "id": 7,
+            "name": "냉면",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/lottemartzetta.com\/products\/OS8801759021108\/details",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "인기",
+            "is_active": true,
+            "sort_order": 3
+        },
+        {
             "id": 4,
             "name": "순대",
             "category": "냉동",
