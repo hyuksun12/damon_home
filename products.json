@@ -5,15 +5,13 @@
             "id": 1,
             "name": "배추김치",
             "category": "냉장",
-            "description": "",
+            "description": "국내산 배추와 천일염으로 담근 정통 배추김치입니다. 업소용 대용량으로 공급하며 신선도 유지에 최적화된 포장으로 납품합니다.",
             "image_url": "https:\/\/wimg.sedaily.com\/news\/legacy\/2025\/06\/17\/2GU3WOVXX7_1.jpg",
             "photo_class": "kimchi",
             "tags": [
                 "업소용 대용량",
                 "정기납품 가능",
-                "국내산",
-                "수입",
-                "도·소매 가능"
+                "국내산"
             ],
             "badge": "인기",
             "is_active": true,
@@ -27,173 +25,73 @@
             "image_url": "https:\/\/godomall-storage.cdn-nhncommerce.com\/57ebc6de8e7e28ef33c1935aabe212a3\/goods\/3\/image\/detail\/1671424070494m0.png",
             "photo_class": "kkakdugi",
             "tags": [
-                "정기납품 가능",
                 "업소용 대용량",
-                "도·소매 가능"
+                "정기납품 가능"
             ],
             "badge": "",
             "is_active": true,
             "sort_order": 2
         },
         {
-            "id": 7,
-            "name": "냉면",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/lottemartzetta.com\/images-v3\/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d\/ad022a1e-28c6-40e2-a110-30b429f1c84e\/500x500.jpg",
-            "photo_class": "",
+            "id": 3,
+            "name": "우거지",
+            "category": "냉장",
+            "description": "청결하게 손질된 신선한 우거지로 국물 요리의 풍미를 더합니다. 해장국·된장찌개 등에 활용하기 좋은 상태로 납품합니다.",
+            "image_url": "https:\/\/storage.googleapis.com\/takeapp\/media\/cmbypqjwu00000akzhacm133g.jpg",
+            "photo_class": "ugeoji",
             "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
+                "손질 완료",
+                "정기납품 가능"
             ],
-            "badge": "인기",
+            "badge": "",
             "is_active": true,
             "sort_order": 3
         },
         {
-            "id": 8,
-            "name": "쫄면",
+            "id": 4,
+            "name": "순대",
             "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/image.8dogam.com\/resized\/product\/asset\/v1\/upload\/b3a0f7b28c494c82b8980444ac0be4fe.jpeg?type=big&res=3x&ext=jpg",
-            "photo_class": "",
+            "description": "당일 생산·당일 납품 원칙으로 가장 신선한 상태를 유지합니다. 순대국밥·분식점 등 다양한 업종에 맞는 규격으로 공급합니다.",
+            "image_url": "https:\/\/image.8dogam.com\/resized\/product\/asset\/v1\/upload\/c86bbca1f3fd499f882b38f3f2284b0b.jpg?type=big&res=2x&ext=webp",
+            "photo_class": "sundae",
             "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
+                "당일납품",
+                "다양한 규격"
             ],
-            "badge": "",
+            "badge": "당일납품",
             "is_active": true,
             "sort_order": 4
         },
         {
-            "id": 9,
-            "name": "막국수",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/content.foodspring.co.kr\/vendor\/2199\/images\/84_6383932410_r.jpg",
-            "photo_class": "",
+            "id": 5,
+            "name": "당면",
+            "category": "가공",
+            "description": "국내산 원료로 생산한 탄력 있고 쫄깃한 고품질 당면입니다. 잡채·찜닭·전골 등 다양한 요리에 사용되며 대용량 납품이 가능합니다.",
+            "image_url": "https:\/\/i.namu.wiki\/i\/jPp4TaJVyjswwZpYHMT6DUn5oVNNZmF0I9Ytqc2UDdXwg1c1RRYim1DBPSgosfAOcZjGyBjxwCQ4hT-hdGMO9w.webp",
+            "photo_class": "dangmyeon",
             "tags": [
+                "국내산 원료",
                 "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
+                "대용량"
             ],
             "badge": "",
             "is_active": true,
             "sort_order": 5
         },
         {
-            "id": 5,
-            "name": "당면",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/i.namu.wiki\/i\/jPp4TaJVyjswwZpYHMT6DUn5oVNNZmF0I9Ytqc2UDdXwg1c1RRYim1DBPSgosfAOcZjGyBjxwCQ4hT-hdGMO9w.webp",
-            "photo_class": "dangmyeon",
-            "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 6
-        },
-        {
-            "id": 12,
-            "name": "육수",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/cdn-acemall.bizhost.kr\/files\/goods\/579\/2_418_1719811670_2.jpg",
-            "photo_class": "",
-            "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 7
-        },
-        {
-            "id": 3,
-            "name": "우거지",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/storage.googleapis.com\/takeapp\/media\/cmbypqjwu00000akzhacm133g.jpg",
-            "photo_class": "ugeoji",
-            "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 8
-        },
-        {
-            "id": 11,
-            "name": "해초",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/m.bangjane.com\/web\/product\/extra\/big\/202302\/0d1ddd989985b65e7c003ad57edaaa99.jpg",
-            "photo_class": "",
-            "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 9
-        },
-        {
-            "id": 4,
-            "name": "순대",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/image.8dogam.com\/resized\/product\/asset\/v1\/upload\/c86bbca1f3fd499f882b38f3f2284b0b.jpg?type=big&res=2x&ext=webp",
-            "photo_class": "sundae",
-            "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 10
-        },
-        {
             "id": 6,
             "name": "고추가루",
             "category": "가공",
-            "description": "",
+            "description": "국내산 고추 100%로 만든 색깔 좋고 매운맛이 살아있는 고추가루입니다. 김치 담금용·요리용 등 용도에 따라 선택 가능합니다.",
             "image_url": "https:\/\/i.pinimg.com\/1200x\/0d\/4a\/cf\/0d4acfce740e9cc7aa9553fd55a96f5d.jpg",
             "photo_class": "pepper",
             "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
+                "국내산 100%",
+                "김치용·요리용"
             ],
-            "badge": "",
+            "badge": "국내산 100%",
             "is_active": true,
-            "sort_order": 11
-        },
-        {
-            "id": 10,
-            "name": "참기름",
-            "category": "가공",
-            "description": "",
-            "image_url": "https:\/\/m.health.chosun.com\/site\/data\/img_dir\/2022\/12\/13\/2022121301800_0.jpg",
-            "photo_class": "",
-            "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 12
+            "sort_order": 6
         }
     ]
 }
