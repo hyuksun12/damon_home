@@ -49,6 +49,21 @@
             "sort_order": 3
         },
         {
+            "id": 7,
+            "name": "냉면",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/lottemartzetta.com\/images-v3\/932dcbc7-fca8-4d43-bcde-f73d1ce3cc7d\/ad022a1e-28c6-40e2-a110-30b429f1c84e\/500x500.jpg",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "도·소매 가능"
+            ],
+            "badge": "인기",
+            "is_active": true,
+            "sort_order": 3
+        },
+        {
             "id": 4,
             "name": "순대",
             "category": "냉동",
