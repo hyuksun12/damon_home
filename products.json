@@ -52,12 +52,12 @@
             "id": 4,
             "name": "순대",
             "category": "냉동",
-            "description": "당일 생산·당일 납품 원칙으로 가장 신선한 상태를 유지합니다. 순대국밥·분식점 등 다양한 업종에 맞는 규격으로 공급합니다.",
+            "description": "",
             "image_url": "https:\/\/image.8dogam.com\/resized\/product\/asset\/v1\/upload\/c86bbca1f3fd499f882b38f3f2284b0b.jpg?type=big&res=2x&ext=webp",
             "photo_class": "sundae",
             "tags": [
-                "당일납품",
-                "다양한 규격"
+                "정기납품 가능",
+                "도·소매 가능"
             ],
             "badge": "당일납품",
             "is_active": true,
