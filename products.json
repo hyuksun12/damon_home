@@ -109,6 +109,21 @@
             "sort_order": 5
         },
         {
+            "id": 9,
+            "name": "막국수",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/thumbnail6.coupangcdn.com\/thumbnails\/remote\/492x492ex\/image\/vendor_inventory\/9aec\/115a7cb0ad058b782472cdb9732dae00e6705aaa3142c139670407bead15.jpg",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 5
+        },
+        {
             "id": 6,
             "name": "고추가루",
             "category": "가공",
