@@ -137,6 +137,21 @@
             "badge": "국내산 100%",
             "is_active": true,
             "sort_order": 6
+        },
+        {
+            "id": 10,
+            "name": "육수",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/cdn-acemall.bizhost.kr\/files\/goods\/579\/2_418_1719811670_2.jpg",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 7
         }
     ]
 }
