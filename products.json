@@ -36,13 +36,13 @@
         {
             "id": 3,
             "name": "우거지",
-            "category": "냉장",
-            "description": "청결하게 손질된 신선한 우거지로 국물 요리의 풍미를 더합니다. 해장국·된장찌개 등에 활용하기 좋은 상태로 납품합니다.",
+            "category": "냉동",
+            "description": "",
             "image_url": "https:\/\/storage.googleapis.com\/takeapp\/media\/cmbypqjwu00000akzhacm133g.jpg",
             "photo_class": "ugeoji",
             "tags": [
-                "손질 완료",
-                "정기납품 가능"
+                "정기납품 가능",
+                "도·소매 가능"
             ],
             "badge": "",
             "is_active": true,
