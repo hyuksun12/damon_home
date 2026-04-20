@@ -67,6 +67,22 @@
             "sort_order": 5
         },
         {
+            "id": 9,
+            "name": "막국수",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/content.foodspring.co.kr\/vendor\/2199\/images\/84_6383932410_r.jpg",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 5
+        },
+        {
             "id": 5,
             "name": "당면",
             "category": "가공",
