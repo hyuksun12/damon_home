@@ -116,6 +116,22 @@
             "sort_order": 7
         },
         {
+            "id": 12,
+            "name": "육수",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/cdn-acemall.bizhost.kr\/files\/goods\/579\/2_418_1719811670_2.jpg",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 7
+        },
+        {
             "id": 11,
             "name": "해초",
             "category": "냉동",
