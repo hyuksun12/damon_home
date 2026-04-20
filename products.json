@@ -74,7 +74,7 @@
                 "정기납품 가능",
                 "도·소매 가능"
             ],
-            "badge": "당일납품",
+            "badge": "",
             "is_active": true,
             "sort_order": 4
         },
