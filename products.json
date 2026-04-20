@@ -51,6 +51,22 @@
             "sort_order": 3
         },
         {
+            "id": 8,
+            "name": "쫄면",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/image.8dogam.com\/resized\/product\/asset\/v1\/upload\/b3a0f7b28c494c82b8980444ac0be4fe.jpeg?type=big&res=3x&ext=jpg",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 4
+        },
+        {
             "id": 4,
             "name": "순대",
             "category": "냉동",
