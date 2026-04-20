@@ -5,13 +5,15 @@
             "id": 1,
             "name": "배추김치",
             "category": "냉장",
-            "description": "국내산 배추와 천일염으로 담근 정통 배추김치입니다. 업소용 대용량으로 공급하며 신선도 유지에 최적화된 포장으로 납품합니다.",
+            "description": "",
             "image_url": "https:\/\/wimg.sedaily.com\/news\/legacy\/2025\/06\/17\/2GU3WOVXX7_1.jpg",
             "photo_class": "kimchi",
             "tags": [
                 "업소용 대용량",
                 "정기납품 가능",
-                "국내산"
+                "국내산",
+                "수입",
+                "도·소매 가능"
             ],
             "badge": "인기",
             "is_active": true,
