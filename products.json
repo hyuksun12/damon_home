@@ -36,22 +36,6 @@
             "sort_order": 3
         },
         {
-            "id": 3,
-            "name": "우거지",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/storage.googleapis.com\/takeapp\/media\/cmbypqjwu00000akzhacm133g.jpg",
-            "photo_class": "ugeoji",
-            "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 5
-        },
-        {
             "id": 4,
             "name": "순대",
             "category": "냉동",
@@ -97,6 +81,22 @@
             "badge": "",
             "is_active": true,
             "sort_order": 6
+        },
+        {
+            "id": 3,
+            "name": "우거지",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/storage.googleapis.com\/takeapp\/media\/cmbypqjwu00000akzhacm133g.jpg",
+            "photo_class": "ugeoji",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 7
         },
         {
             "id": 6,
