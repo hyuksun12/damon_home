@@ -82,12 +82,12 @@
             "id": 6,
             "name": "고추가루",
             "category": "가공",
-            "description": "국내산 고추 100%로 만든 색깔 좋고 매운맛이 살아있는 고추가루입니다. 김치 담금용·요리용 등 용도에 따라 선택 가능합니다.",
+            "description": "",
             "image_url": "https:\/\/i.pinimg.com\/1200x\/0d\/4a\/cf\/0d4acfce740e9cc7aa9553fd55a96f5d.jpg",
             "photo_class": "pepper",
             "tags": [
-                "국내산 100%",
-                "김치용·요리용"
+                "정기납품 가능",
+                "도·소매 가능"
             ],
             "badge": "국내산 100%",
             "is_active": true,
