@@ -143,6 +143,22 @@
             "badge": "국내산 100%",
             "is_active": true,
             "sort_order": 9
+        },
+        {
+            "id": 10,
+            "name": "참기름",
+            "category": "가공",
+            "description": "",
+            "image_url": "https:\/\/m.health.chosun.com\/site\/data\/img_dir\/2022\/12\/13\/2022121301800_0.jpg",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 10
         }
     ]
 }
