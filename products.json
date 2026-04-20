@@ -67,21 +67,6 @@
             "sort_order": 4
         },
         {
-            "id": 4,
-            "name": "순대",
-            "category": "냉동",
-            "description": "당일 생산·당일 납품 원칙으로 가장 신선한 상태를 유지합니다. 순대국밥·분식점 등 다양한 업종에 맞는 규격으로 공급합니다.",
-            "image_url": "https:\/\/image.8dogam.com\/resized\/product\/asset\/v1\/upload\/c86bbca1f3fd499f882b38f3f2284b0b.jpg?type=big&res=2x&ext=webp",
-            "photo_class": "sundae",
-            "tags": [
-                "당일납품",
-                "다양한 규격"
-            ],
-            "badge": "당일납품",
-            "is_active": true,
-            "sort_order": 5
-        },
-        {
             "id": 9,
             "name": "막국수",
             "category": "냉동",
@@ -143,6 +128,21 @@
             "badge": "국내산 100%",
             "is_active": true,
             "sort_order": 7
+        },
+        {
+            "id": 4,
+            "name": "순대",
+            "category": "냉동",
+            "description": "당일 생산·당일 납품 원칙으로 가장 신선한 상태를 유지합니다. 순대국밥·분식점 등 다양한 업종에 맞는 규격으로 공급합니다.",
+            "image_url": "https:\/\/image.8dogam.com\/resized\/product\/asset\/v1\/upload\/c86bbca1f3fd499f882b38f3f2284b0b.jpg?type=big&res=2x&ext=webp",
+            "photo_class": "sundae",
+            "tags": [
+                "당일납품",
+                "다양한 규격"
+            ],
+            "badge": "당일납품",
+            "is_active": true,
+            "sort_order": 8
         }
     ]
 }
