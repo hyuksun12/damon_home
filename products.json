@@ -109,21 +109,6 @@
             "sort_order": 6
         },
         {
-            "id": 6,
-            "name": "고추가루",
-            "category": "가공",
-            "description": "",
-            "image_url": "https:\/\/i.pinimg.com\/1200x\/0d\/4a\/cf\/0d4acfce740e9cc7aa9553fd55a96f5d.jpg",
-            "photo_class": "pepper",
-            "tags": [
-                "정기납품 가능",
-                "도·소매 가능"
-            ],
-            "badge": "국내산 100%",
-            "is_active": true,
-            "sort_order": 6
-        },
-        {
             "id": 10,
             "name": "육수",
             "category": "냉동",
@@ -170,6 +155,22 @@
             "badge": "",
             "is_active": true,
             "sort_order": 9
+        },
+        {
+            "id": 6,
+            "name": "고추가루",
+            "category": "가공",
+            "description": "",
+            "image_url": "https:\/\/i.pinimg.com\/1200x\/0d\/4a\/cf\/0d4acfce740e9cc7aa9553fd55a96f5d.jpg",
+            "photo_class": "pepper",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 11
         }
     ]
 }
