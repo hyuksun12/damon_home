@@ -94,21 +94,6 @@
             "sort_order": 4
         },
         {
-            "id": 5,
-            "name": "당면",
-            "category": "냉동",
-            "description": "",
-            "image_url": "https:\/\/i.namu.wiki\/i\/jPp4TaJVyjswwZpYHMT6DUn5oVNNZmF0I9Ytqc2UDdXwg1c1RRYim1DBPSgosfAOcZjGyBjxwCQ4hT-hdGMO9w.webp",
-            "photo_class": "dangmyeon",
-            "tags": [
-                "정기납품 가능",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 5
-        },
-        {
             "id": 9,
             "name": "막국수",
             "category": "냉동",
@@ -122,6 +107,21 @@
             "badge": "",
             "is_active": true,
             "sort_order": 5
+        },
+        {
+            "id": 5,
+            "name": "당면",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/i.namu.wiki\/i\/jPp4TaJVyjswwZpYHMT6DUn5oVNNZmF0I9Ytqc2UDdXwg1c1RRYim1DBPSgosfAOcZjGyBjxwCQ4hT-hdGMO9w.webp",
+            "photo_class": "dangmyeon",
+            "tags": [
+                "정기납품 가능",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 6
         },
         {
             "id": 6,
