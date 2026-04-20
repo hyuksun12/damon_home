@@ -20,6 +20,21 @@
             "sort_order": 1
         },
         {
+            "id": 2,
+            "name": "깍두기",
+            "category": "냉장",
+            "description": "아삭한 식감이 살아있는 깍두기입니다. 설렁탕·해장국·고깃집 등 다양한 업종에 납품 중이며 업소 규모에 맞게 수량 조절이 가능합니다.",
+            "image_url": "",
+            "photo_class": "kkakdugi",
+            "tags": [
+                "업소용 대용량",
+                "정기납품 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 2
+        },
+        {
             "id": 3,
             "name": "우거지",
             "category": "냉동",
