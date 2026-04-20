@@ -132,6 +132,22 @@
             "sort_order": 8
         },
         {
+            "id": 11,
+            "name": "해초",
+            "category": "냉동",
+            "description": "",
+            "image_url": "https:\/\/m.bangjane.com\/web\/product\/extra\/big\/202302\/0d1ddd989985b65e7c003ad57edaaa99.jpg",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 8
+        },
+        {
             "id": 6,
             "name": "고추가루",
             "category": "가공",
