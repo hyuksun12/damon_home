@@ -19,22 +19,6 @@
             "sort_order": 1
         },
         {
-            "id": 2,
-            "name": "깍두기",
-            "category": "냉장",
-            "description": "",
-            "image_url": "https:\/\/shop.hansalim.or.kr\/shopping\/is\/itm\/100102009\/100102009_1_568.jpg",
-            "photo_class": "kkakdugi",
-            "tags": [
-                "정기납품 가능",
-                "업소용 대용량",
-                "도·소매 가능"
-            ],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 2
-        },
-        {
             "id": 13,
             "name": "열무김치",
             "category": "냉장",
@@ -63,6 +47,22 @@
             "badge": "",
             "is_active": true,
             "sort_order": 2
+        },
+        {
+            "id": 2,
+            "name": "깍두기",
+            "category": "냉장",
+            "description": "",
+            "image_url": "https:\/\/shop.hansalim.or.kr\/shopping\/is\/itm\/100102009\/100102009_1_568.jpg",
+            "photo_class": "kkakdugi",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 3
         },
         {
             "id": 7,
