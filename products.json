@@ -273,6 +273,22 @@
             "badge": "",
             "is_active": true,
             "sort_order": 12
+        },
+        {
+            "id": 18,
+            "name": "곤약(면)",
+            "category": "가공",
+            "description": "",
+            "image_url": "https:\/\/wimg.heraldcorp.com\/content\/default\/2017\/08\/08\/20170808000211_0.jpg",
+            "photo_class": "",
+            "tags": [
+                "업소용 대용량",
+                "정기납품 가능",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 13
         }
     ]
 }
