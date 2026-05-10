@@ -2,6 +2,22 @@
     "success": true,
     "data": [
         {
+            "id": 19,
+            "name": "곤약(묵)",
+            "category": "가공",
+            "description": "",
+            "image_url": "https:\/\/mblogthumb-phinf.pstatic.net\/20150731_298\/minseoung912_1438323921833cYCLi_JPEG\/%B0%EF%BE%E0_%C6%C4%B4%C2%B0%F73.jpg?type=w420",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 0
+        },
+        {
             "id": 1,
             "name": "배추김치",
             "category": "냉장",
