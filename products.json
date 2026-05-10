@@ -115,6 +115,22 @@
             "sort_order": 4
         },
         {
+            "id": 17,
+            "name": "부산물(허파)",
+            "category": "냉장",
+            "description": "",
+            "image_url": "https:\/\/mblogthumb-phinf.pstatic.net\/MjAxOTA2MTJfMTkz\/MDAxNTYwMzIwNDE3NTc4.-qBEOKgnCL14zc-RNddYGKCmVo2EqpFDhm-OTtWmXQcg.tvQ1zBgmKFRgTND_Hwk8BzI4BzlsYHKhn1pvdXT6j-Ug.JPEG.ahs0730\/IMG_3393.JPG?type=w800",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 4
+        },
+        {
             "id": 7,
             "name": "냉면",
             "category": "냉동",
