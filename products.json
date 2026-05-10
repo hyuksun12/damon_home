@@ -305,6 +305,22 @@
             "badge": "",
             "is_active": true,
             "sort_order": 14
+        },
+        {
+            "id": 20,
+            "name": "천사채",
+            "category": "가공",
+            "description": "",
+            "image_url": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcSD6kJUfEn7sNbQbY7b_gFbavRvQAftJ4efxA&s",
+            "photo_class": "",
+            "tags": [
+                "업소용 대용량",
+                "정기납품 가능",
+                "도·소매 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 15
         }
     ]
 }
