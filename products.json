@@ -34,6 +34,21 @@
             "sort_order": 2
         },
         {
+            "id": 14,
+            "name": "총각김치(알타)",
+            "category": "냉장",
+            "description": "",
+            "image_url": "https:\/\/cdn.imweb.me\/thumbnail\/20220713\/cf20967972c49.jpg",
+            "photo_class": "",
+            "tags": [
+                "업소용 대용량",
+                "정기납품 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 2
+        },
+        {
             "id": 2,
             "name": "깍두기",
             "category": "냉장",
