@@ -2,18 +2,6 @@
     "success": true,
     "data": [
         {
-            "id": 16,
-            "name": "부",
-            "category": "냉장",
-            "description": "",
-            "image_url": "",
-            "photo_class": "",
-            "tags": [],
-            "badge": "",
-            "is_active": true,
-            "sort_order": 0
-        },
-        {
             "id": 1,
             "name": "배추김치",
             "category": "냉장",
@@ -102,6 +90,22 @@
             "tags": [
                 "업소용 대용량",
                 "정기납품 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 4
+        },
+        {
+            "id": 16,
+            "name": "부산물(오소리)",
+            "category": "냉장",
+            "description": "",
+            "image_url": "https:\/\/i.namu.wiki\/i\/qg-H2-97qCEjKZDlUjIY8jzQqe3xQc8F1xmMZ3PggZcWmSqy_EQ-xp0yhCkei5LOWHz3YiH1DH01ENljn681rA.webp",
+            "photo_class": "",
+            "tags": [
+                "정기납품 가능",
+                "업소용 대용량",
+                "도·소매 가능"
             ],
             "badge": "",
             "is_active": true,
