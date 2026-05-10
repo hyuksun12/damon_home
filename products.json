@@ -97,6 +97,21 @@
             "sort_order": 4
         },
         {
+            "id": 15,
+            "name": "부산물(간)",
+            "category": "냉장",
+            "description": "",
+            "image_url": "https:\/\/i3.ruliweb.com\/img\/25\/10\/31\/19a3902c7da226290.jpg",
+            "photo_class": "",
+            "tags": [
+                "업소용 대용량",
+                "정기납품 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 4
+        },
+        {
             "id": 9,
             "name": "막국수",
             "category": "냉동",
