@@ -2,6 +2,18 @@
     "success": true,
     "data": [
         {
+            "id": 16,
+            "name": "부",
+            "category": "냉장",
+            "description": "",
+            "image_url": "",
+            "photo_class": "",
+            "tags": [],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 0
+        },
+        {
             "id": 1,
             "name": "배추김치",
             "category": "냉장",
