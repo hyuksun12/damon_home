@@ -35,6 +35,21 @@
             "sort_order": 2
         },
         {
+            "id": 13,
+            "name": "열무김",
+            "category": "냉장",
+            "description": "",
+            "image_url": "https:\/\/www.lampcook.com\/wi_files\/food_local\/2517.jpg",
+            "photo_class": "",
+            "tags": [
+                "업소용 대용량",
+                "정기납품 가능"
+            ],
+            "badge": "",
+            "is_active": true,
+            "sort_order": 2
+        },
+        {
             "id": 7,
             "name": "냉면",
             "category": "냉동",
